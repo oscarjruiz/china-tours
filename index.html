@@ -91,6 +91,20 @@
         .card p {
             margin-bottom: 6px;
         }
+        .image-gallery {
+            display: flex;
+            gap: 15px;
+            margin: 15px 0;
+            flex-wrap: wrap;
+        }
+        .destination-image {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            border-radius: 4px;
+            border: 2px solid #d4af37;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
         .conditional-box {
             background-color: #fdf2f2;
             border: 1px solid #f5c6cb;
@@ -208,13 +222,17 @@
 
     <div class="container">
         
-        <!-- SECTION 1: WORLD DESTINATIONS (REALISTIC LOGISTICS) -->
         <section id="destinations">
             <h2>Premium Expedition Portfolios & Cultural Insights</h2>
             <p>If you traveled with our premium fleet, you would unlock unprecedented access to historical wonders. Below are the official logistical itineraries tailored for this term:</p>
             
             <div class="card">
                 <h3>🇨🇳 Eastern Dragon Route: China Elite</h3>
+                
+                <div class="image-gallery">
+                    <img class="destination-image" src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=950&q=80" alt="The Great Wall of China at sunset">
+                </div>
+
                 <p><strong>Partner Carrier:</strong> OrientSky Express Aviation</p>
                 <p><strong>Premium Fleet Services:</strong> Certified bilingual historians, executive EcoCoach land shuttles with full climate control, priority fast-pass ticket clearance at national monuments, and traditional banquet culinary catering.</p>
                 <p><strong>Signature Festive Timelines:</strong> The Spring Festival Gala (Lunar New Year) and the High Autumn Moon Lantern Festival.</p>
@@ -232,7 +250,6 @@
             </div>
         </section>
 
-        <!-- SECTION 2: INTEGRATION OF PREVIOUS MODULES -->
         <section id="portfolio">
             <h2>Academic Portfolios: Previous Submissions</h2>
             <p>This module presents an integrated summary of our multimedia assets. If we excluded these pathways, our academic documentation would remain incomplete.</p>
@@ -240,6 +257,11 @@
             <div class="card">
                 <h3>Module 1: Documented Travel Blog Insights</h3>
                 <p>An in-depth travel journal displaying structured textual reviews, comparative essays, and stylistic analyses regarding Beijing architecture.</p>
+                
+                <div class="image-gallery">
+                    <img class="destination-image" src="https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?auto=format&fit=crop&w=950&q=80" alt="The Forbidden City Palace Architecture in Beijing">
+                </div>
+
                 <div class="embed-box">
                     <p><strong>Digital Gateway:</strong></p>
                     <a href="https://oscarruizblogchina.blogspot.com/" target="_blank" class="link-button">Access OscarRuizBlogChina</a>
@@ -256,7 +278,6 @@
             </div>
         </section>
 
-        <!-- SECTION 3: CONDITIONAL REVIEWS -->
         <section id="grammar-focus">
             <h2>Advanced Grammatical Hub</h2>
             <p>Evaluating historical events and current choices requires complete fluency in structural conditional syntax.</p>
@@ -291,7 +312,6 @@
             </div>
         </section>
 
-        <!-- SECTION 4: CHATBOX INTERFACE -->
         <section id="interactive-chat">
             <h2>Interactive Hospitality Chat Desk</h2>
             <p>Providing automated marketing evaluations regarding the classic Beijing itineraries through our live concierge terminal.</p>
