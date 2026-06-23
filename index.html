@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GlobalHorizon Tours - Academic Travel Platform</title>
+    <title>GlobalHorizon Imperial Tours - Asia & World Travel</title>
     <style>
         * {
             box-sizing: border-box;
@@ -12,232 +12,260 @@
             font-family: 'Segoe UI', Arial, sans-serif;
         }
         body {
-            background-color: #f4f7f6;
-            color: #333;
-            line-height: 1.6;
+            background-color: #fcfcf9;
+            color: #2c3e50;
+            line-height: 1.7;
         }
         header {
-            background-color: #1a252f;
-            color: white;
-            padding: 30px 20px;
+            background-color: #800000; /* Rojo Imperial Chino */
+            color: #f1c40f; /* Oro Seda */
+            padding: 40px 20px;
             text-align: center;
+            border-bottom: 5px solid #d4af37;
         }
         header h1 {
             margin-bottom: 10px;
-            font-size: 2.5rem;
+            font-size: 2.8rem;
+            letter-spacing: 1px;
+            font-family: 'Georgia', serif;
+        }
+        header p {
+            color: #fcf3cf;
+            font-size: 1.1rem;
         }
         nav {
-            background-color: #2c3e50;
-            padding: 12px;
+            background-color: #1a252f;
+            padding: 14px;
             text-align: center;
             position: sticky;
             top: 0;
             z-index: 1000;
+            border-bottom: 3px solid #800000;
         }
         nav a {
-            color: white;
+            color: #fdfefe;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 18px;
             font-weight: bold;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
         }
         nav a:hover {
-            color: #1abc9c;
-            text-decoration: underline;
+            color: #f1c40f;
         }
         .container {
             max-width: 950px;
-            margin: 20px auto;
-            padding: 20px;
+            margin: 30px auto;
+            padding: 25px;
             background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.05);
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            border-top: 4px solid #800000;
         }
         section {
-            margin-bottom: 40px;
-            padding-bottom: 25px;
-            border-bottom: 2px solid #ecf0f1;
+            margin-bottom: 45px;
+            padding-bottom: 30px;
+            border-bottom: 2px dashed #e5e8e8;
         }
         h2 {
-            color: #2c3e50;
-            margin-bottom: 15px;
-            border-left: 5px solid #e67e22;
-            padding-left: 10px;
+            color: #800000;
+            margin-bottom: 20px;
+            border-left: 6px solid #d4af37;
+            padding-left: 12px;
+            font-family: 'Georgia', serif;
         }
         .card {
-            background-color: #fdfefe;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 6px;
-            border: 1px solid #e5e8e8;
-            border-left: 4px solid #34495e;
+            background-color: #fffdf9; /* Fondo crema suave oriental */
+            padding: 22px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+            border: 1px solid #f5eef0;
+            border-left: 5px solid #800000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
         }
         .card h3 {
-            margin-bottom: 10px;
-            color: #2c3e50;
+            margin-bottom: 12px;
+            color: #800000;
+            font-size: 1.3rem;
+        }
+        .card p {
+            margin-bottom: 6px;
         }
         .conditional-box {
-            background-color: #f4ecf7;
-            border: 1px solid #d5dbdb;
-            padding: 20px;
-            border-radius: 6px;
-            margin-top: 15px;
+            background-color: #fdf2f2;
+            border: 1px solid #f5c6cb;
+            padding: 22px;
+            border-radius: 4px;
+            margin-top: 20px;
         }
         .conditional-box h4 {
-            color: #8e44ad;
-            margin-bottom: 10px;
+            color: #721c24;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
         }
         .conditional-box ul {
             list-style-position: inside;
             margin-top: 10px;
         }
         .conditional-box li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             font-style: italic;
+            color: #1b1e21;
         }
         .chat-container {
-            border: 1px solid #d5dbdb;
-            border-radius: 6px;
+            border: 1px solid #e0d0d0;
+            border-radius: 4px;
             background-color: #fff;
             max-width: 650px;
-            margin: 20px auto;
+            margin: 25px auto;
             overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.04);
         }
         .chat-header {
-            background-color: #34495e;
-            color: white;
-            padding: 12px;
+            background-color: #800000;
+            color: #f1c40f;
+            padding: 14px;
             font-weight: bold;
             text-align: center;
+            font-family: 'Georgia', serif;
         }
         .chat-box {
-            padding: 15px;
-            height: 400px;
+            padding: 20px;
+            height: 420px;
             overflow-y: auto;
-            background-color: #fdfefe;
+            background-color: #fffdfa;
         }
         .message {
-            margin-bottom: 15px;
-            padding: 12px;
-            border-radius: 6px;
+            margin-bottom: 18px;
+            padding: 14px;
+            border-radius: 4px;
             max-width: 85%;
             font-size: 0.95rem;
         }
         .user {
-            background-color: #e8f4f8;
+            background-color: #f9f7f1;
             margin-left: auto;
-            border-right: 3px solid #2980b9;
+            border-right: 4px solid #d4af37;
+            color: #4a3b32;
         }
         .bot {
-            background-color: #f4f6f7;
+            background-color: #f4ecec;
             margin-right: auto;
-            border-left: 3px solid #27ae60;
+            border-left: 4px solid #800000;
+            color: #2c1a1a;
         }
         .embed-box {
-            background-color: #fcf3cf;
-            padding: 15px;
-            border: 1px dashed #f39c12;
+            background-color: #fdfaf2;
+            padding: 20px;
+            border: 1px dashed #d4af37;
             text-align: center;
             margin-top: 15px;
-            border-radius: 5px;
+            border-radius: 4px;
         }
         .link-button {
             display: inline-block;
-            background-color: #e67e22;
-            color: white;
-            padding: 10px 20px;
+            background-color: #800000;
+            color: #fdfefe;
+            padding: 12px 24px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 4px;
             font-weight: bold;
-            margin-top: 10px;
+            margin-top: 12px;
+            transition: background 0.3s ease;
+            border: 1px solid #d4af37;
         }
         .link-button:hover {
-            background-color: #d35400;
+            background-color: #b30000;
+            color: #f1c40f;
         }
         footer {
             background-color: #1a252f;
-            color: white;
+            color: #bdc3c7;
             text-align: center;
-            padding: 20px;
-            margin-top: 40px;
+            padding: 25px;
+            margin-top: 50px;
             font-size: 0.9rem;
+            border-top: 4px solid #d4af37;
+        }
+        footer p {
+            margin-bottom: 5px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>GlobalHorizon Tours</h1>
-        <p>Exploring World Destinations Through Advanced Grammar Structures</p>
+        <h1>GlobalHorizon Imperial Tours</h1>
+        <p>Discover Ancient Heritage Through Advanced Grammatical Mastery</p>
     </header>
 
     <nav>
-        <a href="#destinations">World Guide & Info</a>
-        <a href="#portfolio">Previous Lessons</a>
-        <a href="#grammar-focus">Conditional Grammar Hub</a>
-        <a href="#interactive-chat">Ad-Chat Presentation</a>
+        <a href="#destinations">Curated Journeys</a>
+        <a href="#portfolio">Academic Projects</a>
+        <a href="#grammar-focus">Grammar Hub</a>
+        <a href="#interactive-chat">Support Assistant</a>
     </nav>
 
     <div class="container">
         
-        <!-- SECTION 1: WORLD DESTINATIONS (FICTIONAL DATA WITH SECOND CONDITIONAL IMPLEMENTATION) -->
+        <!-- SECTION 1: WORLD DESTINATIONS (REALISTIC LOGISTICS) -->
         <section id="destinations">
-            <h2>Fictional Travel Guides & Cultural Context</h2>
-            <p>If you traveled with us, you would experience premium customer service. Below is the logistics data created for this academic module:</p>
+            <h2>Premium Expedition Portfolios & Cultural Insights</h2>
+            <p>If you traveled with our premium fleet, you would unlock unprecedented access to historical wonders. Below are the official logistical itineraries tailored for this term:</p>
             
             <div class="card">
-                <h3>🇨🇳 Destination: China (The Ancient Empire)</h3>
-                <p><strong>Fictional Partner Airline:</strong> StarOrient Aviation</p>
-                <p><strong>Fictional Premium Services:</strong> Bilingual dynamic guides, EcoBus shuttles with climatization, fast-track ticket priority, and authentic buffet dining.</p>
-                <p><strong>Key Festive Dates:</strong> The Spring Festival (Lunar New Year) and the Mid-Autumn Lantern Celebration.</p>
-                <p><strong>Gastronomy Types:</strong> Rice-based main courses, Pekinese Roasted Duck, steamed Dim Sum delicacies, and stir-fried wok recipes.</p>
-                <p><strong>Cultural Customs:</strong> If you visited a local home, you would always receive items with both hands. Leaving chopsticks vertically in a bowl is considered bad luck.</p>
+                <h3>🇨🇳 Eastern Dragon Route: China Elite</h3>
+                <p><strong>Partner Carrier:</strong> OrientSky Express Aviation</p>
+                <p><strong>Premium Fleet Services:</strong> Certified bilingual historians, executive EcoCoach land shuttles with full climate control, priority fast-pass ticket clearance at national monuments, and traditional banquet culinary catering.</p>
+                <p><strong>Signature Festive Timelines:</strong> The Spring Festival Gala (Lunar New Year) and the High Autumn Moon Lantern Festival.</p>
+                <p><strong>Gastronomic Selections:</strong> Steamed grain foundations, slow-roasted Pekinese Imperial Duck, authentic basket-steamed Dim Sum, and high-flame wok delicacies.</p>
+                <p><strong>Cultural Etiquette:</strong> If you stepped into a local residence, you would present gifts using both hands. Balancing chopsticks upright within your food bowl is deeply avoided as it mimics solemn rituals.</p>
             </div>
 
             <div class="card">
-                <h3>🇪🇺 Destination: Western Europe (The Historic Trail)</h3>
-                <p><strong>Fictional Partner Airline:</strong> EuroVanguard Express</p>
-                <p><strong>Fictional Premium Services:</strong> Inter-city bullet train tickets, traditional continental breakfasts, automated multimedia audio-guides, and hotel transfers.</p>
-                <p><strong>Key Festive Dates:</strong> Classic Winter Markets (December) and Midsummer Folk Celebrations (June).</p>
-                <p><strong>Gastronomy Types:</strong> Artisan pasta dishes, regional cheeses, slow-cooked savory stews, and fresh bakery goods.</p>
-                <p><strong>Cultural Customs:</strong> If you met local business guides, you would shake hands firmly. Keeping strict quiet hours during the night is highly appreciated.</p>
+                <h3>🇪🇺 Great Western Trail: European Heritage</h3>
+                <p><strong>Partner Carrier:</strong> EuroVanguard Transatlantic</p>
+                <p><strong>Premium Fleet Services:</strong> Inter-city high-velocity rail cross-passes, gourmet European breakfasts, automated personal electronic audio-guides, and private hotel-to-terminal transfers.</p>
+                <p><strong>Signature Festive Timelines:</strong> The Alpine Winter Village Markets (December) and the Northern Midsummer Solstice Gatherings (June).</p>
+                <p><strong>Gastronomic Selections:</strong> House-kneaded pasta variations, regional aged cheeses, slow-simmered winter broth stews, and fresh flour bakery crafts.</p>
+                <p><strong>Cultural Etiquette:</strong> If you met your continental hospitality host, you would maintain a firm, brief handshake. Respecting neighborhood quiet regulations during late hours is highly valued.</p>
             </div>
         </section>
 
-        <!-- SECTION 2: INTEGRATION OF LESSON 1 & LESSON 2 PORTFOLIO -->
+        <!-- SECTION 2: INTEGRATION OF PREVIOUS MODULES -->
         <section id="portfolio">
-            <h2>Academic Portfolio: Lessons 1 & 2</h2>
-            <p>This section integrates our previously generated multimedia projects. If we did not display these links, our academic record would be incomplete.</p>
+            <h2>Academic Portfolios: Previous Submissions</h2>
+            <p>This module presents an integrated summary of our multimedia assets. If we excluded these pathways, our academic documentation would remain incomplete.</p>
             
             <div class="card">
-                <h3>Lesson 1: Travel Blog Submission</h3>
-                <p>A comprehensive blog containing paragraphs, essays, and text analyses regarding Beijing history and modern architecture.</p>
+                <h3>Module 1: Documented Travel Blog Insights</h3>
+                <p>An in-depth travel journal displaying structured textual reviews, comparative essays, and stylistic analyses regarding Beijing architecture.</p>
                 <div class="embed-box">
-                    <p><strong>Academic Link Location:</strong></p>
-                    <a href="https://oscarruizblogchina.blogspot.com/" target="_blank" class="link-button">Open OscarRuizBlogChina</a>
+                    <p><strong>Digital Gateway:</strong></p>
+                    <a href="https://oscarruizblogchina.blogspot.com/" target="_blank" class="link-button">Access OscarRuizBlogChina</a>
                 </div>
             </div>
 
             <div class="card">
-                <h3>Lesson 2: Instructional Travel Video</h3>
-                <p>An original video detailing tour planning, travel restrictions, and local attractions like the Ming Tombs and the Great Wall.</p>
+                <h3>Module 2: Multimedia Instructional Video Production</h3>
+                <p>A detailed travel presentation exploring destination preparation, regional laws, and historic monuments such as the Ming Dynasty Tombs.</p>
                 <div class="embed-box">
-                    <p>🎬 <strong>Multimedia Resource:</strong></p>
-                    <a href="https://www.youtube.com/watch?v=jwkiQdhBZq8" target="_blank" class="link-button" style="background-color: #c0392b;">Watch Video on YouTube (jwkiQdhBZq8)</a>
+                    <p>🎬 <strong>Audiovisual Asset Connection:</strong></p>
+                    <a href="https://www.youtube.com/watch?v=jwkiQdhBZq8" target="_blank" class="link-button" style="background-color: #800000;">Launch Video via YouTube (jwkiQdhBZq8)</a>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 3: CONDITIONAL STRUCTURES (SECOND & THIRD CONDITIONAL EXERCISES) -->
+        <!-- SECTION 3: CONDITIONAL REVIEWS -->
         <section id="grammar-focus">
-            <h2>Grammar Implementation Hub</h2>
-            <p>Our curriculum requires a strict review of conditional sentence structures to evaluate past actions and present hypotheses.</p>
+            <h2>Advanced Grammatical Hub</h2>
+            <p>Evaluating historical events and current choices requires complete fluency in structural conditional syntax.</p>
             
             <div class="conditional-box">
-                <h4>Mandatory Third Conditional Sentences (Past Hypotheses)</h4>
-                <p><em>Structure: If + Past Perfect, ... would have + Past Participle</em></p>
+                <h4>Mandatory Third Conditional Contexts (Past Structural Hypotheses)</h4>
+                <p><em>Syntax Rule: If + Past Perfect, ... would have + Past Participle</em></p>
                 <ul>
-                    <li>1. If Oscar had booked the tickets earlier, he would have traveled on the premium StarOrient flight.</li>
+                    <li>1. If Oscar had booked the tickets earlier, he would have traveled on the premium OrientSky flight.</li>
                     <li>2. If we had arrived at the Forbidden City on time, the tour guide would have shown us the imperial throne room.</li>
                     <li>3. If it had not rained during our visit to the Badaling Great Wall, we would have hiked up to the highest tower.</li>
                     <li>4. If the students of San Mateo had visited the Jade Factory, they would have bought traditional Chinese souvenirs.</li>
@@ -250,47 +278,47 @@
                 </ul>
             </div>
 
-            <div class="conditional-box" style="background-color: #eaf2f8;">
-                <h4>Second Conditional Sentences (Present/Future Imaginary Scenarios)</h4>
-                <p><em>Structure: If + Simple Past, ... would + Base Verb</em></p>
+            <div class="conditional-box" style="background-color: #fbf9f1; border-color: #d4af37;">
+                <h4>Second Conditional Contexts (Present & Future Hypothetical Speculations)</h4>
+                <p><em>Syntax Rule: If + Simple Past, ... would + Base Infinitive</em></p>
                 <ul>
-                    <li>1. If I won a free ticket to Asia tomorrow, I would explore the historic streets of Beijing immediately.</li>
-                    <li>2. If our agency had more corporate discounts, we would lower the prices for all San Mateo students.</li>
-                    <li>3. If you visited China during the Spring Festival, you would see beautiful fireworks everywhere.</li>
-                    <li>4. If Oscar had more free time this semester, he would design an advanced AI application for global travelers.</li>
-                    <li>5. If the tour bus had better seats, the 50-mile trip to the Ming Tombs would be much more relaxing.</li>
+                    <li>1. If I won an open ticket to Asia tomorrow, I would explore the historic pathways of Beijing immediately.</li>
+                    <li>2. If our enterprise possessed broader corporate discounts, we would lower prices significantly for all San Mateo students.</li>
+                    <li>3. If you visited China during the spectacular Spring Festival, you would witness festive lanterns everywhere.</li>
+                    <li>4. If Oscar commanded more open windows this semester, he would engineer an automated companion application for global travelers.</li>
+                    <li>5. If the long-distance coach featured upgraded seating arrangements, the 50-mile journey to the Ming Tombs would be incredibly relaxing.</li>
                 </ul>
             </div>
         </section>
 
-        <!-- SECTION 4: INTERACTIVE PUBLICITY CHAT (RESPONSES TO READING QUESTIONS) -->
+        <!-- SECTION 4: CHATBOX INTERFACE -->
         <section id="interactive-chat">
-            <h2>Interactive Web-Chat & Marketing Presentation</h2>
-            <p>Answering the official evaluation questions from the "Five Places to Visit in China" text via an automated promotional chat simulator.</p>
+            <h2>Interactive Hospitality Chat Desk</h2>
+            <p>Providing automated marketing evaluations regarding the classic Beijing itineraries through our live concierge terminal.</p>
             
             <div class="chat-container">
                 <div class="chat-header">
-                    🤖 GlobalHorizon Automated Web-Chat Helpdesk
+                    🏮 GlobalHorizon Live Concierge Terminal
                 </div>
                 <div class="chat-box">
                     <div class="message bot">
-                        <strong>Support System:</strong> Hello, traveler! Thank you for accessing our interactive web layout. If you had any questions about the Beijing itinerary options, I would answer them right now!
+                        <strong>Concierge:</strong> Welcome to our gateway! If you requested assistance regarding the primary Beijing exploration paths, I would provide all comprehensive answers immediately.
                     </div>
                     
                     <div class="message user">
-                        <strong>User Question:</strong> From the two tour plans mentioned in the text (the 2-Day Beijing Highlights Group Tour and the 1-Day China Kungfu Show Night Tour), which one would you choose? Why?
+                        <strong>Oscar (Student):</strong> From the two primary tour itineraries evaluated above (the 2-Day Beijing Highlights Group Tour and the 1-Day Night Kungfu Performance Tour), which route would you choose, and what reasons support that selection?
                     </div>
                     
                     <div class="message bot">
-                        <strong>Support System:</strong> <strong>I would definitely choose the 2-Day Beijing Highlights Bus Group Tour!</strong> If I selected the short night tour, I would only see a single theatrical show. However, by choosing the 2-day option, I get to witness monumental historical landmarks. If I took that tour, I would hike the Badaling Great Wall, explore the central axis of the Forbidden City, and view the Summer Palace imperial gardens. It offers an extensive cultural immersion that perfectly justifies the decision!
+                        <strong>Concierge:</strong> <strong>I would absolutely choose the 2-Day Beijing Highlights Bus Group Tour!</strong> If I selected the brief evening performance package, I would only observe a single isolated stage show. On the contrary, if I chose the full 2-day expedition, I would discover monumental imperial treasures. If I took that route, I would hike along the iconic Great Wall at Badaling, trace the central axis of the Forbidden City, and explore the vast imperial gardens of the Summer Palace. The sheer cultural depth completely validates the choice!
                     </div>
 
                     <div class="message user">
-                        <strong>User Question:</strong> If you visited the recommended web page (tourtravelchina.com/beijing-tours/), which alternative tour option would you choose, and why would you like to take it?
+                        <strong>Oscar (Student):</strong> If you navigated the recommended travel directory, which alternative tour catalog would you select, and why would you be interested in it?
                     </div>
 
                     <div class="message bot">
-                        <strong>Support System:</strong> If I browsed their extended platform, <strong>I would choose the "1-Day Mutianyu Great Wall Tour with Alpine Toboggan Descent."</strong> If I went to Mutianyu instead of Badaling, I would experience a less crowded environment with greener, more breathtaking natural landscapes. Additionally, if I took that option, I would be able to ride a thrilling toboggan slide down from the mountain wall. It beautifully blends historic architecture with modern outdoor recreation!
+                        <strong>Concierge:</strong> If I accessed their comprehensive directory, <strong>I would select the "1-Day Mutianyu Great Wall Expedition with Alpine Toboggan Descent."</strong> If I traveled to Mutianyu instead of Badaling, I would find a vastly peaceful, uncrowded mountain environment wrapped in deep, pristine natural flora. Furthermore, if I chose that specific plan, I would easily glide down from the ancient stonework via an exciting mountain bobsled slide. It perfectly unites historical legacy with outdoor excitement!
                     </div>
                 </div>
             </div>
@@ -299,8 +327,8 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 GlobalHorizon Tours | Virtual Learning Unit - Fundación Universitaria San Mateo</p>
-        <p>Developed by Oscar Javier Ruiz Benavides - AI & Data Science Student</p>
+        <p>&copy; 2026 GlobalHorizon Imperial Tours | Virtual Learning System - Fundación Universitaria San Mateo</p>
+        <p>Designed by Oscar Javier Ruiz Benavides - Artificial Intelligence & Data Science Student</p>
     </footer>
 
 </body>
