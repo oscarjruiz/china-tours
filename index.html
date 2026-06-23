@@ -1,136 +1,307 @@
-<header>
-    <h1>GlobalHorizon Tours</h1>
-    <p>Exploring World Destinations Through Advanced Grammar Structures</p>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalHorizon Tours - Academic Travel Platform</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1a252f;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+        nav {
+            background-color: #2c3e50;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #1abc9c;
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 950px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.05);
+        }
+        section {
+            margin-bottom: 40px;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-left: 5px solid #e67e22;
+            padding-left: 10px;
+        }
+        .card {
+            background-color: #fdfefe;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            border: 1px solid #e5e8e8;
+            border-left: 4px solid #34495e;
+        }
+        .card h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .conditional-box {
+            background-color: #f4ecf7;
+            border: 1px solid #d5dbdb;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+        .conditional-box h4 {
+            color: #8e44ad;
+            margin-bottom: 10px;
+        }
+        .conditional-box ul {
+            list-style-position: inside;
+            margin-top: 10px;
+        }
+        .conditional-box li {
+            margin-bottom: 8px;
+            font-style: italic;
+        }
+        .chat-container {
+            border: 1px solid #d5dbdb;
+            border-radius: 6px;
+            background-color: #fff;
+            max-width: 650px;
+            margin: 20px auto;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .chat-header {
+            background-color: #34495e;
+            color: white;
+            padding: 12px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .chat-box {
+            padding: 15px;
+            height: 400px;
+            overflow-y: auto;
+            background-color: #fdfefe;
+        }
+        .message {
+            margin-bottom: 15px;
+            padding: 12px;
+            border-radius: 6px;
+            max-width: 85%;
+            font-size: 0.95rem;
+        }
+        .user {
+            background-color: #e8f4f8;
+            margin-left: auto;
+            border-right: 3px solid #2980b9;
+        }
+        .bot {
+            background-color: #f4f6f7;
+            margin-right: auto;
+            border-left: 3px solid #27ae60;
+        }
+        .embed-box {
+            background-color: #fcf3cf;
+            padding: 15px;
+            border: 1px dashed #f39c12;
+            text-align: center;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+        .link-button {
+            display: inline-block;
+            background-color: #e67e22;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .link-button:hover {
+            background-color: #d35400;
+        }
+        footer {
+            background-color: #1a252f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
 
-<nav>
-    <a href="#destinations">World Guide & Info</a>
-    <a href="#portfolio">Previous Lessons</a>
-    <a href="#grammar-focus">Conditional Grammar Hub</a>
-    <a href="#interactive-chat">Ad-Chat Presentation</a>
-</nav>
+    <header>
+        <h1>GlobalHorizon Tours</h1>
+        <p>Exploring World Destinations Through Advanced Grammar Structures</p>
+    </header>
 
-<div class="container">
-    
-    <!-- SECTION 1: WORLD DESTINATIONS (FICTIONAL DATA WITH SECOND CONDITIONAL IMPLEMENTATION) -->
-    <section id="destinations">
-        <h2>Fictional Travel Guides & Cultural Context</h2>
-        <p>If you traveled with us, you would experience premium customer service. Below is the logistics data created for this academic module:</p>
+    <nav>
+        <a href="#destinations">World Guide & Info</a>
+        <a href="#portfolio">Previous Lessons</a>
+        <a href="#grammar-focus">Conditional Grammar Hub</a>
+        <a href="#interactive-chat">Ad-Chat Presentation</a>
+    </nav>
+
+    <div class="container">
         
-        <div class="card">
-            <h3>🇨🇳 Destination: China (The Ancient Empire)</h3>
-            <p><strong>Fictional Partner Airline:</strong> StarOrient Aviation</p>
-            <p><strong>Fictional Premium Services:</strong> Bilingual dynamic guides, EcoBus shuttles with climatization, fast-track ticket priority, and authentic buffet dining.</p>
-            <p><strong>Key Festive Dates:</strong> The Spring Festival (Lunar New Year) and the Mid-Autumn Lantern Celebration.</p>
-            <p><strong>Gastronomy Types:</strong> Rice-based main courses, Pekinese Roasted Duck, steamed Dim Sum delicacies, and stir-fried wok recipes.</p>
-            <p><strong>Cultural Customs:</strong> If you visited a local home, you would always receive items with both hands. Leaving chopsticks vertically in a bowl is considered bad luck.</p>
-        </div>
-
-        <div class="card">
-            <h3>🇪🇺 Destination: Western Europe (The Historic Trail)</h3>
-            <p><strong>Fictional Partner Airline:</strong> EuroVanguard Express</p>
-            <p><strong>Fictional Premium Services:</strong> Inter-city bullet train tickets, traditional continental breakfasts, automated multimedia audio-guides, and hotel transfers.</p>
-            <p><strong>Key Festive Dates:</strong> Classic Winter Markets (December) and Midsummer Folk Celebrations (June).</p>
-            <p><strong>Gastronomy Types:</strong> Artisan pasta dishes, regional cheeses, slow-cooked savory stews, and fresh bakery goods.</p>
-            <p><strong>Cultural Customs:</strong> If you met local business guides, you would shake hands firmly. Keeping strict quiet hours during the night is highly appreciated.</p>
-        </div>
-    </section>
-
-    <!-- SECTION 2: INTEGRATION OF LESSON 1 & LESSON 2 PORTFOLIO -->
-    <section id="portfolio">
-        <h2>Academic Portfolio: Lessons 1 & 2</h2>
-        <p>This section integrates our previously generated multimedia projects. If we did not display these links, our academic record would be incomplete.</p>
-        
-        <div class="card">
-            <h3>Lesson 1: Travel Blog Submission</h3>
-            <p>A comprehensive blog containing paragraphs, essays, and text analyses regarding Beijing history and modern architecture.</p>
-            <div class="embed-box">
-                <p><strong>Academic Link Location:</strong></p>
-                <a href="[https://oscarruizblogchina.blogspot.com/](https://oscarruizblogchina.blogspot.com/)" target="_blank" class="link-button">Open OscarRuizBlogChina</a>
+        <!-- SECTION 1: WORLD DESTINATIONS (FICTIONAL DATA WITH SECOND CONDITIONAL IMPLEMENTATION) -->
+        <section id="destinations">
+            <h2>Fictional Travel Guides & Cultural Context</h2>
+            <p>If you traveled with us, you would experience premium customer service. Below is the logistics data created for this academic module:</p>
+            
+            <div class="card">
+                <h3>🇨🇳 Destination: China (The Ancient Empire)</h3>
+                <p><strong>Fictional Partner Airline:</strong> StarOrient Aviation</p>
+                <p><strong>Fictional Premium Services:</strong> Bilingual dynamic guides, EcoBus shuttles with climatization, fast-track ticket priority, and authentic buffet dining.</p>
+                <p><strong>Key Festive Dates:</strong> The Spring Festival (Lunar New Year) and the Mid-Autumn Lantern Celebration.</p>
+                <p><strong>Gastronomy Types:</strong> Rice-based main courses, Pekinese Roasted Duck, steamed Dim Sum delicacies, and stir-fried wok recipes.</p>
+                <p><strong>Cultural Customs:</strong> If you visited a local home, you would always receive items with both hands. Leaving chopsticks vertically in a bowl is considered bad luck.</p>
             </div>
-        </div>
 
-        <div class="card">
-            <h3>Lesson 2: Instructional Travel Video</h3>
-            <p>An original video detailing tour planning, travel restrictions, and local attractions like the Ming Tombs and the Great Wall.</p>
-            <div class="embed-box">
-                <p>🎬 <strong>Multimedia Resource:</strong></p>
-                <a href="[https://www.youtube.com/watch?v=jwkiQdhBZq8](https://www.youtube.com/watch?v=jwkiQdhBZq8)" target="_blank" class="link-button" style="background-color: #c0392b;">Watch Video on YouTube (jwkiQdhBZq8)</a>
+            <div class="card">
+                <h3>🇪🇺 Destination: Western Europe (The Historic Trail)</h3>
+                <p><strong>Fictional Partner Airline:</strong> EuroVanguard Express</p>
+                <p><strong>Fictional Premium Services:</strong> Inter-city bullet train tickets, traditional continental breakfasts, automated multimedia audio-guides, and hotel transfers.</p>
+                <p><strong>Key Festive Dates:</strong> Classic Winter Markets (December) and Midsummer Folk Celebrations (June).</p>
+                <p><strong>Gastronomy Types:</strong> Artisan pasta dishes, regional cheeses, slow-cooked savory stews, and fresh bakery goods.</p>
+                <p><strong>Cultural Customs:</strong> If you met local business guides, you would shake hands firmly. Keeping strict quiet hours during the night is highly appreciated.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- SECTION 3: CONDITIONAL STRUCTURES (SECOND & THIRD CONDITIONAL EXERCISES) -->
-    <section id="grammar-focus">
-        <h2>Grammar Implementation Hub</h2>
-        <p>Our curriculum requires a strict review of conditional sentence structures to evaluate past actions and present hypotheses.</p>
-        
-        <div class="conditional-box">
-            <h4>Mandatory Third Conditional Sentences (Past Hypotheses)</h4>
-            <p><em>Structure: If + Past Perfect, ... would have + Past Participle</em></p>
-            <ul>
-                <li>1. If Oscar had booked the tickets earlier, he would have traveled on the premium StarOrient flight.</li>
-                <li>2. If we had arrived at the Forbidden City on time, the tour guide would have shown us the imperial throne room.</li>
-                <li>3. If it had not rained during our visit to the Badaling Great Wall, we would have hiked up to the highest tower.</li>
-                <li>4. If the students of San Mateo had visited the Jade Factory, they would have bought traditional Chinese souvenirs.</li>
-                <li>5. If Sharon had tried the spicy hotpot in Beijing, she would have discovered her new favorite Asian dish.</li>
-                <li>6. If the agency had not offered the English-speaking guide, the tourists would have lost their way in Tian'anmen Square.</li>
-                <li>7. If you had checked the weather forecast last week, you would have packed more comfortable clothes for Beijing.</li>
-                <li>8. If the bus group tour had departed at 7:00 am, we would have avoided the heavy traffic in downtown Beijing.</li>
-                <li>9. If Oscar had read the blog guidelines carefully, he would have included more pictures of the Summer Palace.</li>
-                <li>10. If the imperial Emperors had not built the Temple of Heaven, modern tourists would not have witnessed that beautiful architecture.</li>
-            </ul>
-        </div>
-
-        <div class="conditional-box" style="background-color: #eaf2f8;">
-            <h4>Second Conditional Sentences (Present/Future Imaginary Scenarios)</h4>
-            <p><em>Structure: If + Simple Past, ... would + Base Verb</em></p>
-            <ul>
-                <li>1. If I won a free ticket to Asia tomorrow, I would explore the historic streets of Beijing immediately.</li>
-                <li>2. If our agency had more corporate discounts, we would lower the prices for all San Mateo students.</li>
-                <li>3. If you visited China during the Spring Festival, you would see beautiful fireworks everywhere.</li>
-                <li>4. If Oscar had more free time this semester, he would design an advanced AI application for global travelers.</li>
-                <li>5. If the tour bus had better seats, the 50-mile trip to the Ming Tombs would be much more relaxing.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- SECTION 4: INTERACTIVE PUBLICITY CHAT (RESPONSES TO READING QUESTIONS) -->
-    <section id="interactive-chat">
-        <h2>Interactive Web-Chat & Marketing Presentation</h2>
-        <p>Answering the official evaluation questions from the "Five Places to Visit in China" text via an automated promotional chat simulator.</p>
-        
-        <div class="chat-container">
-            <div class="chat-header">
-                🤖 GlobalHorizon Automated Web-Chat Helpdesk
-            </div>
-            <div class="chat-box">
-                <div class="message bot">
-                    <strong>Support System:</strong> Hello, traveler! Thank you for accessing our interactive web layout. If you had any questions about the Beijing itinerary options, I would answer them right now!
-                </div>
-                
-                <div class="message user">
-                    <strong>User Question:</strong> From the two tour plans mentioned in the text (the 2-Day Beijing Highlights Group Tour and the 1-Day China Kungfu Show Night Tour), which one would you choose? Why?
-                </div>
-                
-                <div class="message bot">
-                    <strong>Support System:</strong> <strong>I would definitely choose the 2-Day Beijing Highlights Bus Group Tour!</strong> If I selected the short night tour, I would only see a single theatrical show. However, by choosing the 2-day option, I get to witness monumental historical landmarks. If I took that tour, I would hike the Badaling Great Wall, explore the central axis of the Forbidden City, and view the Summer Palace imperial gardens. It offers an extensive cultural immersion that perfectly justifies the decision!
-                </div>
-
-                <div class="message user">
-                    <strong>User Question:</strong> If you visited the recommended web page ([tourtravelchina.com/beijing-tours/](https://tourtravelchina.com/beijing-tours/)), which alternative tour option would you choose, and why would you like to take it?
-                </div>
-
-                <div class="message bot">
-                    <strong>Support System:</strong> If I browsed their extended platform, <strong>I would choose the "1-Day Mutianyu Great Wall Tour with Alpine Toboggan Descent."</strong> If I went to Mutianyu instead of Badaling, I would experience a less crowded environment with greener, more breathtaking natural landscapes. Additionally, if I took that option, I would be able to ride a thrilling toboggan slide down from the mountain wall. It beautifully blends historic architecture with modern outdoor recreation!
+        <!-- SECTION 2: INTEGRATION OF LESSON 1 & LESSON 2 PORTFOLIO -->
+        <section id="portfolio">
+            <h2>Academic Portfolio: Lessons 1 & 2</h2>
+            <p>This section integrates our previously generated multimedia projects. If we did not display these links, our academic record would be incomplete.</p>
+            
+            <div class="card">
+                <h3>Lesson 1: Travel Blog Submission</h3>
+                <p>A comprehensive blog containing paragraphs, essays, and text analyses regarding Beijing history and modern architecture.</p>
+                <div class="embed-box">
+                    <p><strong>Academic Link Location:</strong></p>
+                    <a href="https://oscarruizblogchina.blogspot.com/" target="_blank" class="link-button">Open OscarRuizBlogChina</a>
                 </div>
             </div>
-        </div>
-    </section>
 
-</div>
+            <div class="card">
+                <h3>Lesson 2: Instructional Travel Video</h3>
+                <p>An original video detailing tour planning, travel restrictions, and local attractions like the Ming Tombs and the Great Wall.</p>
+                <div class="embed-box">
+                    <p>🎬 <strong>Multimedia Resource:</strong></p>
+                    <a href="https://www.youtube.com/watch?v=jwkiQdhBZq8" target="_blank" class="link-button" style="background-color: #c0392b;">Watch Video on YouTube (jwkiQdhBZq8)</a>
+                </div>
+            </div>
+        </section>
 
-<footer>
-    <p>&copy; 2026 GlobalHorizon Tours | Virtual Learning Unit - Fundación Universitaria San Mateo</p>
-    <p>Developed by Oscar Javier Ruiz Benavides - AI & Data Science Student</p>
-</footer>
+        <!-- SECTION 3: CONDITIONAL STRUCTURES (SECOND & THIRD CONDITIONAL EXERCISES) -->
+        <section id="grammar-focus">
+            <h2>Grammar Implementation Hub</h2>
+            <p>Our curriculum requires a strict review of conditional sentence structures to evaluate past actions and present hypotheses.</p>
+            
+            <div class="conditional-box">
+                <h4>Mandatory Third Conditional Sentences (Past Hypotheses)</h4>
+                <p><em>Structure: If + Past Perfect, ... would have + Past Participle</em></p>
+                <ul>
+                    <li>1. If Oscar had booked the tickets earlier, he would have traveled on the premium StarOrient flight.</li>
+                    <li>2. If we had arrived at the Forbidden City on time, the tour guide would have shown us the imperial throne room.</li>
+                    <li>3. If it had not rained during our visit to the Badaling Great Wall, we would have hiked up to the highest tower.</li>
+                    <li>4. If the students of San Mateo had visited the Jade Factory, they would have bought traditional Chinese souvenirs.</li>
+                    <li>5. If Sharon had tried the spicy hotpot in Beijing, she would have discovered her new favorite Asian dish.</li>
+                    <li>6. If the agency had not offered the English-speaking guide, the tourists would have lost their way in Tian'anmen Square.</li>
+                    <li>7. If you had checked the weather forecast last week, you would have packed more comfortable clothes for Beijing.</li>
+                    <li>8. If the bus group tour had departed at 7:00 am, we would have avoided the heavy traffic in downtown Beijing.</li>
+                    <li>9. If Oscar had read the blog guidelines carefully, he would have included more pictures of the Summer Palace.</li>
+                    <li>10. If the imperial Emperors had not built the Temple of Heaven, modern tourists would not have witnessed that beautiful architecture.</li>
+                </ul>
+            </div>
+
+            <div class="conditional-box" style="background-color: #eaf2f8;">
+                <h4>Second Conditional Sentences (Present/Future Imaginary Scenarios)</h4>
+                <p><em>Structure: If + Simple Past, ... would + Base Verb</em></p>
+                <ul>
+                    <li>1. If I won a free ticket to Asia tomorrow, I would explore the historic streets of Beijing immediately.</li>
+                    <li>2. If our agency had more corporate discounts, we would lower the prices for all San Mateo students.</li>
+                    <li>3. If you visited China during the Spring Festival, you would see beautiful fireworks everywhere.</li>
+                    <li>4. If Oscar had more free time this semester, he would design an advanced AI application for global travelers.</li>
+                    <li>5. If the tour bus had better seats, the 50-mile trip to the Ming Tombs would be much more relaxing.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SECTION 4: INTERACTIVE PUBLICITY CHAT (RESPONSES TO READING QUESTIONS) -->
+        <section id="interactive-chat">
+            <h2>Interactive Web-Chat & Marketing Presentation</h2>
+            <p>Answering the official evaluation questions from the "Five Places to Visit in China" text via an automated promotional chat simulator.</p>
+            
+            <div class="chat-container">
+                <div class="chat-header">
+                    🤖 GlobalHorizon Automated Web-Chat Helpdesk
+                </div>
+                <div class="chat-box">
+                    <div class="message bot">
+                        <strong>Support System:</strong> Hello, traveler! Thank you for accessing our interactive web layout. If you had any questions about the Beijing itinerary options, I would answer them right now!
+                    </div>
+                    
+                    <div class="message user">
+                        <strong>User Question:</strong> From the two tour plans mentioned in the text (the 2-Day Beijing Highlights Group Tour and the 1-Day China Kungfu Show Night Tour), which one would you choose? Why?
+                    </div>
+                    
+                    <div class="message bot">
+                        <strong>Support System:</strong> <strong>I would definitely choose the 2-Day Beijing Highlights Bus Group Tour!</strong> If I selected the short night tour, I would only see a single theatrical show. However, by choosing the 2-day option, I get to witness monumental historical landmarks. If I took that tour, I would hike the Badaling Great Wall, explore the central axis of the Forbidden City, and view the Summer Palace imperial gardens. It offers an extensive cultural immersion that perfectly justifies the decision!
+                    </div>
+
+                    <div class="message user">
+                        <strong>User Question:</strong> If you visited the recommended web page (tourtravelchina.com/beijing-tours/), which alternative tour option would you choose, and why would you like to take it?
+                    </div>
+
+                    <div class="message bot">
+                        <strong>Support System:</strong> If I browsed their extended platform, <strong>I would choose the "1-Day Mutianyu Great Wall Tour with Alpine Toboggan Descent."</strong> If I went to Mutianyu instead of Badaling, I would experience a less crowded environment with greener, more breathtaking natural landscapes. Additionally, if I took that option, I would be able to ride a thrilling toboggan slide down from the mountain wall. It beautifully blends historic architecture with modern outdoor recreation!
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 GlobalHorizon Tours | Virtual Learning Unit - Fundación Universitaria San Mateo</p>
+        <p>Developed by Oscar Javier Ruiz Benavides - AI & Data Science Student</p>
+    </footer>
+
+</body>
+</html>
